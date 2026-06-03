@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AST Global Trade</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #111827;
+    }
+
+    header img {
+      height: 60px;
+      border-radius: 8px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #0f172a, #1e3a8a);
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #cbd5e1;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #1f2937;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #111827;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .lang {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background: #2563eb;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="lang" onclick="toggleLang()">AR / EN</div>
+
+<header>
+  <img src="https://i.postimg.cc/gJq2X83J/6eaa4429-29d8-427a-b19a-63a6bf63b569.jpg" alt="Logo">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1 id="title">AST Global Trade</h1>
+  <p id="subtitle">Import • Export • Sourcing • Logistics • Everything from A to Z</p>
+</section>
+
+<section class="section" id="about">
+  <h2>About Us</h2>
+  <p>
+    AST Global Trade connects clients worldwide with China and global markets.
+    We provide full services including sourcing, translation, logistics, and business support.
+  </p>
+</section>
+
+<section class="section" id="services">
+  <h2>Our Services</h2>
+
+  <div class="services">
+    <div class="card">Import & Export</div>
+    <div class="card">Sourcing Products</div>
+    <div class="card">Logistics Support</div>
+    <div class="card">Translation Services</div>
+    <div class="card">China Business Tours</div>
+    <div class="card">Hotel Booking Support</div>
+    <div class="card">Custom Business Solutions</div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <h2>Our Work</h2>
+
+  <div class="gallery">
+    <img src="https://i.postimg.cc/jSwq6Gzs/0ec23431-2e38-477a-9f4d-a3e67e9e1567.jpg">
+    <img src="https://i.postimg.cc/BQwQKq1q/48261137-9e4b-4479-89b9-b017479b67cb.jpg">
+    <img src="https://i.postimg.cc/cLg17VQd/4e9fdcf2-1fc0-410a-a762-d5774b186296.jpg">
+    <img src="https://i.postimg.cc/JzD739b4/4fb7d0c8-b0a8-4da4-893f-13c43fd096b8.jpg">
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p>Phone: +962 0791875524</p>
+  <p>WhatsApp: +86 130 85655809</p>
+  <p>Address: Yiwu, Zhejiang, China</p>
+</section>
+
+<footer>
+  <p>© 2026 AST Global Trade. All Rights Reserved.</p>
+</footer>
+
+<script>
+function toggleLang() {
+  const title = document.getElementById("title");
+  const subtitle = document.getElementById("subtitle");
+
+  if (title.innerText === "AST Global Trade") {
+    title.innerText = "ايه اس تي للتجارة العالمية";
+    subtitle.innerText = "استيراد • تصدير • توريد • خدمات لوجستية";
+  } else {
+    title.innerText = "AST Global Trade";
+    subtitle.innerText = "Import • Export • Sourcing • Logistics • Everything from A to Z";
+  }
+}
+</script>
+
+</body>
+</html>
